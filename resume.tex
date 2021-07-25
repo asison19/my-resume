@@ -1,0 +1,195 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.2in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Andrew Sison} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (951) 818-4244 ~ \href{mailto:andrewsison19@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {andrewsison19@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/asison19/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/asison19}}  ~
+    \href{https://github.com/asison19/}{\raisebox{-0.2\height}\faGithub\ {github.com/asison19}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% Position 1
+    \resumeSubheading
+      {Northrop Grumman}{January 2020 - Present}
+      {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Stressed-tested a Qt (C++) satellite simulation client and refactored client to only use a single GUI thread in lieu of multiple threads that were causing crashes, minimizing the amount of crashes from $\mathtt{\sim}$80 per month to 0.}
+        \resumeItem{Redesigned satellite simulation client to have a dropdown of satellite simulations, with a tooltip feature to organize telemetry with respect to the simulation in question.}
+        \resumeItem{Designed a close-to-plain-English grammar for a transpiler to target HashiCorp Packer to avoid the overhead costs associated with maintaining hand-written configurations, potentially saving the enterprise in the order of hundreds of thousands of dollars.}
+        \resumeItem{Using Ansible, automated and hardened deployments of tooling such as Docker, Kubernetes, Jira, and Bamboo, minimizing deployment times for internal teams from weeks to hours.}
+        \resumeItem{Leveraged Molecule to write automated unit tests to verify the correctness of Ansible code, saving at least 80 developer hours per month, quantified by the amount of bugs reported by end users.}
+        \resumeItem{Wrote Jenkins shared library logic to resolve nondeterminism in HashCorp Packer build errors in nightly builds, increasing the amount of passing builds by 50\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State Polytechnic University, Pomona}{December 2019}
+      {Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+%\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-2pt, parsep=3pt]
+                \item\small Big Data and Cloud Computing
+                \item Compiler Theory
+                \item Data Structures and Algorithms
+                \item GUI Programming
+                \item Operating Systems
+                \item Parallel Processing
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Lexical and Syntax Analyzer}  \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Wrote the Lexer and the Parser using JFlex and CUP and designed the grammar of the language.}
+            \resumeItem{Created a Trie Table to hold keywords and identifiers, making search and insertion O($\log_k n$).}
+            \resumeItem{Provided QA by fixing lexical rules, ensuring proper tokenization, and solving grammar ambiguities.}
+            \resumeItem{Verified parsing of the input into lexemes, and wrote pattern definitions using regular expressions.}
+            \resumeItem{Led team of 2, and taught partner Git, ensuring proper version control of the project.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Bash, C++, C\#, Java, Python} \\
+     \textbf{Operating Systems}{: Linux} \\
+     \textbf{Tools}{: Ansible, Docker, Git, HashiCorp Packer, Jenkins, Kubernetes} \\
+     \textbf{Concepts}{: Agile Development, Compiler and Interpreter Design, DevOps, GitOps} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
