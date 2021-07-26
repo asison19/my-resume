@@ -119,7 +119,7 @@
     {\Huge \scshape Andrew Sison} \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ (951) 818-4244 ~ \href{mailto:andrewsison19@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {andrewsison19@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/asison19/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/asison19}}  ~
-    \href{https://github.com/asison19/}{\raisebox{-0.2\height}\faGithub\ {github.com/asison19}}
+    \href{https://github.com/asison19}{\raisebox{-0.2\height}\faGithub\ {github.com/asison19}}
     \vspace{-8pt}
 \end{center}
 
@@ -132,11 +132,11 @@
       {Northrop Grumman}{January 2020 - Present}
       {Software Engineer}{}
       \resumeItemListStart
-        \resumeItem{Stressed-tested a Qt (C++) satellite simulation client and refactored client to only use a single GUI thread in lieu of multiple threads that were causing crashes, minimizing the amount of crashes from $\mathtt{\sim}$80 per month to 0.}
+        \resumeItem{Stress-tested a Qt (C++) satellite simulation client and refactored client to use a single GUI thread in lieu of multiple threads that were causing crashes, reducing the amount of crashes by $\mathtt{\sim}$80 per month per client.}
         \resumeItem{Redesigned satellite simulation client to have a dropdown of satellite simulations, with a tooltip feature to organize telemetry with respect to the simulation in question.}
         \resumeItem{Designed a close-to-plain-English grammar for a transpiler to target HashiCorp Packer to avoid the overhead costs associated with maintaining hand-written configurations, potentially saving the enterprise in the order of hundreds of thousands of dollars.}
         \resumeItem{Using Ansible, automated and hardened deployments of tooling such as Docker, Kubernetes, Jira, and Bamboo, minimizing deployment times for internal teams from weeks to hours.}
-        \resumeItem{Leveraged Molecule to write automated unit tests to verify the correctness of Ansible code, saving at least 80 developer hours per month, quantified by the amount of bugs reported by end users.}
+        \resumeItem{Leveraged Molecule to write automated unit tests of Ansible code, and automated the provisioning of Docker Desktop, allowing containerized Molecule unit testing for Windows, saving at least 80 developer hours per month, quantified by the amount of bugs reported by end users.}
         \resumeItem{Wrote Jenkins shared library logic to resolve nondeterminism in HashCorp Packer build errors in nightly builds, increasing the amount of passing builds by 50\%.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -147,7 +147,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {California State Polytechnic University, Pomona}{December 2019}
-      {Bachelor of Science in Computer Science}{}
+      {Bachelor of Science in Computer Science}{Pomona, CA}
   \resumeSubHeadingListEnd
 %\section{Relevant Coursework}
     %\resumeSubHeadingListStart
@@ -176,16 +176,23 @@
             \resumeItem{Provided QA by fixing lexical rules, ensuring proper tokenization, and solving grammar ambiguities.}
             \resumeItem{Verified parsing of the input into lexemes, and wrote pattern definitions using regular expressions.}
             \resumeItem{Led team of 2, and taught partner Git, ensuring proper version control of the project.}
+          \resumeItemListEnd
+\vspace{-16pt}
+      \resumeProjectHeading
+          {\textbf{Data Visualizations of Cal Poly Pomona}  \emph{}}{}
+          \resumeItemListStart
+            \resumeItem{Scripted in Python, along with NumPy, Pandas, and MatPlotLib.}
+            \resumeItem{Graphed visualizations of PM levels, temperature, and humidity by using the Pandas data frame API, and reading in csv files from Purple Air’s public air quality sensors.}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
-\vspace{-15pt}
+\vspace{-16pt}
 
 %-----------SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Bash, C++, C\#, Java, Python} \\
-     \textbf{Operating Systems}{: Linux} \\
+     \textbf{Languages}{: Bash, C++, Java, Python} \\
+     \textbf{Operating Systems}{: Linux, Windows 10} \\
      \textbf{Tools}{: Ansible, Docker, Git, HashiCorp Packer, Jenkins, Kubernetes} \\
      \textbf{Concepts}{: Agile Development, Compiler and Interpreter Design, DevOps, GitOps} \\
     }}
